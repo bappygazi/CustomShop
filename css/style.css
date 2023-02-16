@@ -1,0 +1,276 @@
+/*common part css*/
+* {
+    margin: 0;
+    outline: 0;
+    padding: 0;
+}
+
+img {
+    border: 0;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* fonts css  */
+@font-face {
+    font-family: Ridley-Grotesk-Regular;
+    src: url(../webfonts/Ridley-Grotesk-Regular.otf);
+}
+
+@font-face {
+    font-family: Ridley-Grotesk-Medium;
+    src: url(../webfonts/Ridley-Grotesk-Medium.otf);
+}
+
+@font-face {
+    font-family: Ridley-Grotesk-SemiBold;
+    src: url(../webfonts/Ridley-Grotesk-SemiBold.otf);
+}
+
+@font-face {
+    font-family: Ridley-Grotesk-Bold;
+    src: url(../webfonts/Ridley-Grotesk-Bold.otf);
+}
+
+/* font family css  */
+.fw-normal {
+    font-family: Ridley-Grotesk-Regular;
+}
+
+.fw-medium {
+    font-weight: 500;
+    font-family: Ridley-Grotesk-Medium;
+}
+
+.fw-semibold {
+    font-family: Ridley-Grotesk-SemiBold;
+}
+
+.fw-bold {
+    font-family: Ridley-Grotesk-Bold;
+}
+
+/* fonts size css  */
+h2 {
+    font-size: 2.5rem;
+}
+
+/* text color css  */
+.text-muted {
+    color: #506170 !important;
+}
+
+/* navigation part css */
+
+.navbar .form-control {
+    height: 52px;
+    font-size: 0.875rem;
+}
+.navbar form {
+    width: 30%;
+}
+/* signIn part css  */
+.signin-content {
+    padding: 0 155px;
+}
+
+.heading-subtitle p {
+    font-size: 1.125rem;
+}
+
+.signin-content .form-label {
+    font-size: 1rem;
+}
+
+.signin-content .form-control {
+    height: 60px;
+    font-size: 0.938rem;
+}
+
+.form-control:focus {
+    border-color: #00A2E2;
+}
+
+.form-check .form-check-label {
+    font-size: 1rem;
+}
+
+.form-check .form-check-input {
+    width: 30px;
+    height: 30px;
+}
+
+.form-check .form-check-input:checked {
+    background-color: #000000;
+}
+
+.form-check .form-check-input:focus {
+    border-color: #B3BBC1;
+}
+
+.forget a {
+    font-size: 1rem;
+}
+
+.login-btn .btn {
+    height: 60px;
+    font-size: 1.125rem;
+}
+
+.signin-option::after {
+    left: 0;
+    top: 50%;
+    width: 40%;
+    height: 1px;
+    content: '';
+    opacity: .5;
+    position: absolute;
+    transform: translateY(-50%);
+    background-color: #b3bbc18f;
+}
+
+.signin-option::before {
+    top: 50%;
+    right: 0;
+    width: 40%;
+    height: 1px;
+    content: '';
+    opacity: .5;
+    position: absolute;
+    transform: translateY(-50%);
+    background-color: #b3bbc18f;
+}
+
+.signin-option span {
+    font-size: 1.25rem;
+}
+
+.signin-other-btn .btn {
+    height: 65px;
+    font-size: 1.313rem;
+    border: 0.5px solid #506170 !important
+}
+
+/* subscribe part css  */
+#subscribe {
+    background-color: #08BF5D;
+}
+
+.subscribe-content p {
+    font-size: 1.375rem;
+}
+
+.subscribe-content .form-control {
+    height: 52px;
+    font-size: 0.875rem;
+    color: #777585;
+}
+
+.subscribe-content .btn {
+    top: 50%;
+    right: 0px;
+    height: 53px;
+    padding: 0 45px;
+    font-size: 0.875rem;
+}
+
+.subscribe-content form {
+    width: 72%;
+}
+
+#footer {
+    background-color: #00160A;
+}
+
+.footer-items h6 {
+    font-size: 1rem;
+}
+
+.footer-items ul li a {
+    color: #B6C9DB;
+    font-size: 0.875rem;
+    transition: all linear .2s;
+}
+
+.footer-items ul li a:hover {
+    color: #ffffff;
+}
+
+.social-icon a {
+    width: 40px;
+    height: 40px;
+    line-height: 36px;
+    transition: all linear .2s;
+}
+
+.social-icon a:hover {
+    background-color: #ffffff;
+}
+
+.social-icon a:hover i {
+    color: #000000;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(182, 201, 219, 0.31);
+}
+
+.footer-bottom small {
+    color: #B6C9DB;
+}
+
+.footer-bottom small a {
+    color: #B6C9DB;
+}
+
+.footer-bottom small a:hover {
+    color: #ffffff;
+}
+
+/* responsive desing  */
+
+/* Small devices (landscape phones) */
+@media (max-width: 767.98px) {
+    .signin-content {
+        padding: 0 25px;
+    }
+
+    .signin-option span {
+        font-size: 1rem;
+    }
+
+    .signin-other-btn .btn {
+        font-size: 1rem;
+    }
+
+    .subscribe-content form {
+        width: 100%;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .signin-content {
+        padding: 0 80px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .signin-content {
+        padding: 0 100px;
+    }
+}
