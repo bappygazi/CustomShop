@@ -1,0 +1,493 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Product Details</title>
+    <!-- favicon  -->
+    <link rel="icon" href="./images/favicon.io">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- fontawesome icon -->
+    <link rel="stylesheet" href="./css/fontawesome-all.min.css">
+    <!-- owl carousel css  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <!-- owl theme css  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <!-- main style  -->
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body class="fw-normal">
+
+    <!-- navigation part html start  -->
+    <section id="navigation" class="border-bottom overflow-hidden">
+        <nav class="navbar navbar-expand-lg pt-3">
+            <div class="container">
+                <button class="btn sidebar sidebar-icon border-0 me-3 p-0"><img src="./images/sidebar-icon.svg" alt="sidebar-icon.svg" class="img-fluid"></button>
+                <button class="btn sidebar sidebar-close d-none border-0 me-3 p-0"><img src="./images/sidebar-close.svg" alt="sidebar-close.svg" class="img-fluid"></button>
+                <a class="navbar-brand" href="#"><img src="./images/logo.svg" alt="logo.svg" class="img-fluid"></a>
+                <form class="d-flex position-relative m-auto" role="search">
+                    <input class="form-control shadow-sm me-2 fw-normal rounded-pill ps-4 pe-5" type="search" placeholder="search for anything" aria-label="Search">
+                    <button class="btn border-0 position-absolute end-0 top-50 translate-middle-y d-flex p-0 me-4" type="submit"><img src="./images/search-icon.svg" alt="search-icon.svg" class="img-fluid"></button>
+                </form>
+                <div class="justify-content-end flex-grow-0" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0 flex-row">
+                        <li class="nav-item ms-2">
+                            <a class="nav-link d-flex align-items-center fw-normal" href="#"><img src="./images/user-icon.svg" alt="user-icon.svg" class="img-fluid me-2"><span class="d-none d-md-block">sign in</span></a>
+                        </li>
+                        <li class="nav-item ms-2">
+                            <a class="nav-link d-flex align-items-center fw-normal" href="#"><img src="./images/whitelist-icon.svg" alt="whitelist.svg" class="img-fluid me-2"> <span class="d-none d-md-block">wishlist</span> </a>
+                        </li>
+                        <li class="nav-item ms-2">
+                            <a class="nav-link d-flex align-items-center fw-normal" href="#"><img src="./images/cart-icon.svg" alt="cart.svg" class="img-fluid me-2"> <span class="d-none d-md-block">cart</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- sideMenu part html start -->
+        <div class="sideMenu bg-white position-absolute border top-0">
+            <h3 class="fw-normal text-black">Filters</h3>
+            <ul>
+                <li class="border-bottom py-3"><a class="fw-medium d-flex align-items-center justify-content-between" href="#">Browse shop</a></li>
+                <li class="border-bottom py-3"><a class="fw-medium d-flex align-items-center justify-content-between" href="#">Custom Books <i class="fas fa-angle-right"></i></a></li>
+                <li class="border-bottom py-3"><a class="fw-medium d-flex align-items-center justify-content-between" href="#">Custom Products <i class="fas fa-angle-right"></i></a></li>
+                <li class="border-bottom py-3"><a class="fw-medium d-flex align-items-center justify-content-between" href="#">Plant-Based<i class="fas fa-angle-right"></i></a></li>
+                <li class="border-bottom py-3"><a class="fw-medium d-flex align-items-center justify-content-between" href="#">Home</a></li>
+                <li class="border-bottom py-3"><a class="fw-medium d-flex align-items-center justify-content-between" href="#">Crads</a></li>
+                <li class="border-bottom py-3"><a class="fw-medium d-flex align-items-center justify-content-between" href="#">Start Selling</a></li>
+                <li class="border-bottom py-3"><a class="fw-medium d-flex align-items-center justify-content-between" href="#">Join Us</a></li>
+                <li class="py-3"><a class="fw-medium d-flex align-items-center justify-content-between" href="#">Login</a></li>
+            </ul>
+        </div>
+        <!-- sideMenu part html end -->
+        <!-- navbar bottom menu start -->
+        <nav class="menu py-3 d-none d-md-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <ul class="d-flex justify-content-center">
+                            <li class="nav-item px-2 px-lg-3">
+                                <a class="nav-link d-flex align-items-center fw-normal" href="#">Browse shop</a>
+                            </li>
+                            <li class="nav-item px-2 px-lg-3">
+                                <a class="nav-link d-flex align-items-center fw-normal" href="#">Custom Books</a>
+                            </li>
+                            <li class="nav-item px-2 px-lg-3">
+                                <a class="nav-link d-flex align-items-center fw-normal" href="#">Custom Products</a>
+                            </li>
+                            <li class="nav-item px-2 px-lg-3">
+                                <a class="nav-link d-flex align-items-center fw-normal" href="#">Plant-Based</a>
+                            </li>
+                            <li class="nav-item px-2 px-lg-3">
+                                <a class="nav-link d-flex align-items-center fw-normal" href="#">Cards</a>
+                            </li>
+                            <li class="nav-item px-2 px-lg-4">
+                                <a class="nav-link d-flex align-items-center fw-normal" href="#">Start Selling</a>
+                            </li>
+                            <li class="nav-item px-2 px-lg-3">
+                                <a class="nav-link d-flex align-items-center fw-normal" href="#">Join Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- navbar bottom menu end -->
+
+    </section>
+    <!-- navigation part html end  -->
+
+    <!-- product-details part html start  -->
+    <div id="product" class="pt-5 overflow-hidden">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="product-show">
+                        <div class="product-show-slider bg-white pb-4 d-flex align-items-center">
+                            <div class="slider owl-carousel owl-theme ">
+                                <div class="item" data-hash="zero">
+                                    <div class="product-preview-img bg-ligth">
+                                        <img src="./images/product_details-img.png" alt="product_details-img.jpg" class=" img-fluid w-100">
+                                    </div>
+                                </div>
+                                <div class="item" data-hash="one">
+                                    <div class="product-preview-img">
+                                        <img src="./images/product_details-img.png" alt="product_details-img.jpg" class=" img-fluid w-100">
+                                    </div>
+                                </div>
+                                <div class="item" data-hash="two">
+                                    <div class="product-preview-img">
+                                        <img src="./images/product_details-img.png" alt="product_details-img.jpg" class=" img-fluid w-100">
+                                    </div>
+                                </div>
+                                <div class="item" data-hash="three">
+                                    <div class="product-preview-img">
+                                        <img src="./images/product_details-img.png" alt="product_details-img.jpg" class=" img-fluid w-100">
+                                    </div>
+                                </div>
+                                <div class="item" data-hash="four">
+                                    <div class="product-preview-img">
+                                        <img src="./images/product_details-img.png" alt="product_details-img.jpg" class=" img-fluid w-100">
+                                    </div>
+                                </div>
+                                <div class="item" data-hash="five">
+                                    <div class="product-preview-img">
+                                        <img src="./images/product_details-img.png" alt="product_details-img.jpg" class=" img-fluid w-100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-show-items d-flex justify-content-between">
+                            <div class="slider owl-carousel">
+                                <div class="preview-item mb-2">
+                                    <a href="#zero" class="item bg-white text-center d-inline-block active" data-hash="zero">
+                                        <img src="./images/product_details-img.png" alt="product_details-img.jpg" class=" img-fluid w-100">
+                                    </a>
+                                </div>
+                                <div class="preview-item mb-2">
+                                    <a href="#one" class="item bg-white text-center d-inline-block" data-hash="one">
+                                        <img src="./images/product_details-img.png" alt="product_details-img.jpg" class=" img-fluid w-100">
+                                    </a>
+                                </div>
+                                <div class="preview-item">
+                                    <a href="#two" class="item bg-white text-center d-inline-block" data-hash="two">
+                                        <img src="./images/product_details-img.png" alt="product_details-img.jpg" class=" img-fluid w-100">
+                                    </a>
+                                </div>
+                                <div class="preview-item">
+                                    <a href="#three" class="item bg-white text-center d-inline-block" data-hash="two">
+                                        <img src="./images/product_details-img.png" alt="product_details-img.jpg" class=" img-fluid w-100">
+                                    </a>
+                                </div>
+                                <div class="preview-item">
+                                    <a href="#four" class="item bg-white text-center d-inline-block" data-hash="two">
+                                        <img src="./images/product_details-img.png" alt="product_details-img.jpg" class=" img-fluid w-100">
+                                    </a>
+                                </div>
+                                <div class="preview-item">
+                                    <a href="#five" class="item bg-white text-center d-inline-block" data-hash="two">
+                                        <img src="./images/product_details-img.png" alt="product_details-img.jpg" class=" img-fluid w-100">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="product-details-text ps-lg-5 pt-4 pt-lg-0">
+                        <h3 class="fw-medium text-black mb-3">All-Over Print, Large Tote Bag
+                            w/Pocket (16"×20")</h3>
+                        <div class="review mb-4">
+                            <a href="#"><i class="fas fa-star"></i></a>
+                            <a href="#"><i class="fas fa-star"></i></a>
+                            <a href="#"><i class="fas fa-star"></i></a>
+                            <a href="#"><i class="fas fa-star"></i></a>
+                            <a href="#"><i class="fas fa-star"></i></a>
+                            <span class="text-black-50 ms-1">(22)</span>
+                        </div>
+                        <div class="product-details-items mb-4">
+                            <h6 class="text-black fw-bold mb-3">Color: <span class="fw-normal text-black-50">Black</span></h6>
+
+                            <div class="product-details-items-color">
+                                <a class="d-inline-block text-center bg-tumbleweed rounded-circle text-center text-white me-2 active" href="#"><i class="fas fa-check rounded-circle"></i></a>
+                                <a class="d-inline-block text-center bg-black rounded-circle text-center text-white me-2" href="#"><i class="fas fa-check rounded-circle"></i></a>
+                                <a class="d-inline-block text-center bg-brown rounded-circle text-center text-white me-2" href="#"><i class="fas fa-check rounded-circle"></i></a>
+                                <a class="d-inline-block text-center bg-green rounded-circle text-center text-white me-2" href="#"><i class="fas fa-check rounded-circle"></i></a>
+                                <a class="d-inline-block text-center bg-sky rounded-circle text-center text-white me-2" href="#"><i class="fas fa-check rounded-circle"></i></a>
+                                <a class="d-inline-block text-center bg-charcoal rounded-circle text-center text-white" href="#"><i class="fas fa-check rounded-circle"></i></a>
+                            </div>
+                        </div>
+                        <div class="product-details-items mb-4">
+                            <h6 class="text-black fw-bold mb-3">Style: </h6>
+                            <select class="form-select fw-normal shadow-none rounded-pill px-4" aria-label="Default select example">
+                                <option class="fw-normal" selected>Chihuahua</option>
+                                <option class="fw-normal" value="1">One</option>
+                                <option class="fw-normal" value="2">Two</option>
+                                <option class="fw-normal" value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="product-details-items  mb-4">
+                            <h6 class="text-black fw-bold mb-3">Size: </h6>
+                            <div class="btn-group">
+                                <button class="btn fw-normal border rounded-pill me-3">S</button>
+                                <button class="btn fw-normal border rounded-pill me-3">M</button>
+                                <button class="btn fw-normal border rounded-pill me-3">XL</button>
+                                <button class="btn fw-normal border rounded-pill">2XL</button>
+                            </div>
+                        </div>
+                        <div class="product-details-items  mb-4">
+                            <div class="price text-black fw-semibold">£60.80<span class="text-decoration-line-through ms-2 fw-normal">£76.00</span><span class="ms-2 fw-normal">( 20% off)</span></div>
+                        </div>
+                        <div class="product-details-items  mb-4">
+                            <div class="d-grid">
+                                <button class="btn bg-black text-white fw-semibold rounded-pill" type="submit">ADD TO BAG</button>
+                            </div>
+                        </div>
+                        <div class="offer-timer pt-2 d-flex justify-content-between align-items-center">
+                            <div class="offer-text">
+                                <h4 class="fw-bold mb-1">SAVE 23%</h4>
+                                <p class="mb-0 fw-semibold">for the next:</p>
+                            </div>
+                            <div class="offer-time d-flex  text-center">
+                                <div class="time-items mx-1 rounded-2">
+                                    <label class="fw-bold" for="days">0</label>
+                                    <span class="d-block fw-medium">Days</span>
+                                </div>
+                                <div class="time-items mx-1 rounded-2">
+                                    <label class="fw-bold" for="hours">0</label>
+                                    <span class="d-block fw-medium">Hours</span>
+                                </div>
+                                <div class="time-items mx-1 rounded-2">
+                                    <label class="fw-bold" for="mins">0</label>
+                                    <span class="d-block fw-medium"> Mins</span>
+                                </div>
+                                <div class="time-items mx-1 rounded-2">
+                                    <label class="fw-bold" for="secs">0</label>
+                                    <span class="d-block fw-medium">Secs</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- product-details part html end  -->
+
+    <!-- product-specific part html start  -->
+    <div id="product-specific" class="pt-5 overflow-hidden">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="product-specific-tabs">
+                        <ul class="nav nav-pills border-bottom mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link fw-semibold rounded-0 px-0 me-5 pb-3 active" id="pills-description-tab" data-bs-toggle="pill" data-bs-target="#pills-description" type="button" role="tab" aria-controls="pills-description" aria-selected="true">Description</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link fw-semibold rounded-0 px-0 me-5 pb-3" id="pills-details-tab" data-bs-toggle="pill" data-bs-target="#pills-details" type="button" role="tab" aria-controls="pills-details" aria-selected="false">Other Details</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content border-bottom mb-4 pb-3" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-description" role="tabpanel" aria-labelledby="pills-description-tab" tabindex="0">
+                                <p class="text-muted pt-2 mb-4">Meet your companion for any occasion—our All-Over Print Large Tote Bag! It’s spacious, comfy, and a great choice no matter where you’re going. Take it with you on your next beach trip or on a stroll around town.</p>
+                                <div class="mb-4">
+                                    <h6 class="text-black">Details</h6>
+                                    <p class="text-muted">All-Over Print Large Tote Bag, 100% Polyester</p>
+                                </div>
+                                <div class="mb-4">
+                                    <h6 class="text-black">Dimensions</h6>
+                                    <p class="text-muted">Maximum weight limit</p>
+                                </div>
+                                <div class="mb-4">
+                                    <h6 class="text-black">Properties</h6>
+                                    <p class="text-muted">Comfortable cotton webbing handles, large inside pocket</p>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-details" role="tabpanel" aria-labelledby="pills-details-tab" tabindex="0">
+                                <p class="text-muted pt-2 mb-4">Meet your companion for any occasion—our All-Over Print Large Tote Bag! It’s spacious, comfy, and a great choice no matter where you’re going. Take it with you on your next beach trip or on a stroll around town.</p>
+                                <div class="mb-4">
+                                    <h6 class="text-black">Details</h6>
+                                    <p class="text-muted">All-Over Print Large Tote Bag, 100% Polyester</p>
+                                </div>
+                                <div class="mb-4">
+                                    <h6 class="text-black">Dimensions</h6>
+                                    <p class="text-muted">Maximum weight limit</p>
+                                </div>
+                                <div class="mb-4">
+                                    <h6 class="text-black">Properties</h6>
+                                    <p class="text-muted">Comfortable cotton webbing handles, large inside pocket</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- product-specific part html end  -->
+
+    <!-- recent product part html start  -->
+    <div id="recent-product" class="pb-3 overflow-hidden">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="recent-product-header mb-4 pt-2">
+                        <h4 class="fw-semibold text-black">More Related Products</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-2">
+                <div class="col-lg-3 col-6">
+                    <div class="product-items mb-5">
+                        <a href="#">
+                            <img src="./images/product-items.png" alt="product-items.png" class="img-fluid w-100">
+                            <h6 class="fw-medium text-black pt-3">4 Ingredients Veggie & Vegan</h6>
+                            <div class="review mb-2">
+                                <a href="#"><i class="fas fa-star"></i></a>
+                                <a href="#"><i class="fas fa-star"></i></a>
+                                <a href="#"><i class="fas fa-star"></i></a>
+                                <a href="#"><i class="fas fa-star"></i></a>
+                                <a href="#"><i class="fas fa-star"></i></a>
+                                <span class="text-black-50 ms-1 fw-normal">(22)</span>
+                            </div>
+                            <div class="price fw-semibold"> £60.80 <span class="fw-normal ms-1 text-decoration-line-through">£76.00</span><span class="fw-normal ms-1">( 20% off)</span></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="product-items mb-5">
+                        <a href="#">
+                            <img src="./images/product-items.png" alt="product-items.png" class="img-fluid w-100">
+                            <h6 class="fw-medium text-black pt-3">4 Ingredients Veggie & Vegan</h6>
+                            <div class="review mb-2">
+                                <a href="#"><i class="fas fa-star"></i></a>
+                                <a href="#"><i class="fas fa-star"></i></a>
+                                <a href="#"><i class="fas fa-star"></i></a>
+                                <a href="#"><i class="fas fa-star"></i></a>
+                                <a href="#"><i class="fas fa-star"></i></a>
+                                <span class="text-black-50 ms-1 fw-normal">(22)</span>
+                            </div>
+                            <div class="price fw-semibold"> £60.80 <span class="fw-normal ms-1 text-decoration-line-through">£76.00</span><span class="fw-normal ms-1">( 20% off)</span></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="product-items mb-5">
+                        <a href="#">
+                            <img src="./images/product-items.png" alt="product-items.png" class="img-fluid w-100">
+                            <h6 class="fw-medium text-black pt-3">4 Ingredients Veggie & Vegan</h6>
+                            <div class="review mb-2">
+                                <a href="#"><i class="fas fa-star"></i></a>
+                                <a href="#"><i class="fas fa-star"></i></a>
+                                <a href="#"><i class="fas fa-star"></i></a>
+                                <a href="#"><i class="fas fa-star"></i></a>
+                                <a href="#"><i class="fas fa-star"></i></a>
+                                <span class="text-black-50 ms-1 fw-normal">(22)</span>
+                            </div>
+                            <div class="price fw-semibold"> £60.80 <span class="fw-normal ms-1 text-decoration-line-through">£76.00</span><span class="fw-normal ms-1">( 20% off)</span></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="product-items mb-5">
+                        <a href="#">
+                            <img src="./images/product-items.png" alt="product-items.png" class="img-fluid w-100">
+                            <h6 class="fw-medium text-black pt-3">4 Ingredients Veggie & Vegan</h6>
+                            <div class="review mb-2">
+                                <a href="#"><i class="fas fa-star"></i></a>
+                                <a href="#"><i class="fas fa-star"></i></a>
+                                <a href="#"><i class="fas fa-star"></i></a>
+                                <a href="#"><i class="fas fa-star"></i></a>
+                                <a href="#"><i class="fas fa-star"></i></a>
+                                <span class="text-black-50 ms-1 fw-normal">(22)</span>
+                            </div>
+                            <div class="price fw-semibold"> £60.80 <span class="fw-normal ms-1 text-decoration-line-through">£76.00</span><span class="fw-normal ms-1">( 20% off)</span></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- recent product part html end  -->
+
+    <!-- subscribe part html start -->
+    <section id="subscribe" class="py-5 overflow-hidden">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 m-auto">
+                    <div class="subscribe-content text-center">
+                        <p class="text-white fw-normal mb-4">Yes! Send me exclusive offers, unique gift ideas, and personalised
+                            tips for shopping and selling.</p>
+                        <form class="position-relative m-auto" role="search">
+                            <input class="form-control me-2 rounded-pill fw-normal shadow-none border-0" type="search" placeholder="Enter your email" aria-label="Search">
+                            <button class="btn text-white fw-normal rounded-start-0 rounded-pill border-0 shadow-none bg-black position-absolute translate-middle-y" type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- subscribe part html end -->
+
+    <!-- footer part html start -->
+    <footer id="footer" class="py-5 overflow-hidden">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="logo text-center text-xl-start mb-4 mb-xl-0">
+                        <img src="./images/logo-white.png" alt="logo-white.png" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="footer-items pt-3">
+                        <h6 class="text-white fw-normal mb-4">Shop</h6>
+                        <ul>
+                            <li class="mb-3"><a class="fw-normal" href="#">Custom Books</a></li>
+                            <li class="mb-3"><a class="fw-normal" href="#">Custom Products</a></li>
+                            <li class="mb-3"><a class="fw-normal" href="#">Plant-Based</a></li>
+                            <li class="mb-3"><a class="fw-normal" href="#">Cards</a></li>
+                            <li class="mb-3"><a class="fw-normal" href="#">Start Selling</a></li>
+                            <li class="mb-3"><a class="fw-normal" href="#">Join Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="footer-items pt-3">
+                        <h6 class="text-white fw-normal mb-4">Freelance</h6>
+                        <ul>
+                            <li class="mb-3"><a class="fw-normal" href="#">Write</a></li>
+                            <li class="mb-3"><a class="fw-normal" href="#">Edit</a></li>
+                            <li class="mb-3"><a class="fw-normal" href="#">Design</a></li>
+                            <li class="mb-3"><a class="fw-normal" href="#">Illustrate</a></li>
+                            <li class="mb-3"><a class="fw-normal" href="#">About</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="footer-items pt-3">
+                        <h6 class="text-white fw-normal mb-4">Help</h6>
+                        <ul>
+                            <li class="mb-3"><a class="fw-normal" href="#">Online Help</a></li>
+                            <li class="mb-3"><a class="fw-normal" href="#">Faq</a></li>
+                            <li class="mb-3"><a class="fw-normal" href="#">Forums</a></li>
+                            <li class="mb-3"><a class="fw-normal" href="#">Affiliates</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg">
+                    <div class="footer-items pt-3 social-icon text-center text-lg-start">
+                        <h6 class="text-white fw-normal mb-4">Get Social</h6>
+                        <a class="text-white rounded-circle text-center border d-inline-block me-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="text-white rounded-circle text-center border d-inline-block me-2" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="text-white rounded-circle text-center border d-inline-block me-2" href="#"><i class="fab fa-youtube"></i></a>
+                        <a class="text-white rounded-circle text-center border d-inline-block" href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer-bottom mt-4 text-center pt-4">
+                        <small class="fw-normal">© 2022 Customeshop.com. <a class="ms-3" href="#">Terms of Use </a> <a class="ms-3" href="#">Privacy</a></small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer part html end -->
+
+    <!-- jQuery library  -->
+    <script src="./js/jquery-1.12.1.min.js"></script>
+    <!-- owl carousel  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- custom js -->
+    <script src="./js/custom.js"></script>
+</body>
+
+</html>

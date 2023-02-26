@@ -5,9 +5,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SignIn</title>
+    <!-- favicon  -->
     <link rel="icon" href="./images/favicon.io">
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- fontawesome icon -->
     <link rel="stylesheet" href="./css/fontawesome-all.min.css">
+    <!-- owl carousel css  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <!-- owl theme css  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <!-- main style  -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -17,54 +25,69 @@
     <section id="navigation" class="border-bottom overflow-hidden">
         <nav class="navbar navbar-expand-lg pt-3">
             <div class="container">
-                <button class="btn sidebar border-0 me-3"><img src="./images/sidebar-icon.svg" alt="sidebar-icon.svg" class="img-fluid"></button>
+                <button class="btn sidebar sidebar-icon border-0 me-3 p-0"><img src="./images/sidebar-icon.svg" alt="sidebar-icon.svg" class="img-fluid"></button>
+                <button class="btn sidebar sidebar-close d-none border-0 me-3 p-0"><img src="./images/sidebar-close.svg" alt="sidebar-close.svg" class="img-fluid"></button>
                 <a class="navbar-brand" href="#"><img src="./images/logo.svg" alt="logo.svg" class="img-fluid"></a>
-                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button> -->
                 <form class="d-flex position-relative m-auto" role="search">
                     <input class="form-control shadow-sm me-2 fw-normal rounded-pill ps-4 pe-5" type="search" placeholder="search for anything" aria-label="Search">
                     <button class="btn border-0 position-absolute end-0 top-50 translate-middle-y d-flex p-0 me-4" type="submit"><img src="./images/search-icon.svg" alt="search-icon.svg" class="img-fluid"></button>
                 </form>
-                <div class="collapse navbar-collapse justify-content-end flex-grow-0" id="navbarSupportedContent">
-                    <ul class="navbar-nav mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link d-flex align-items-center fw-normal" href="#"><img src="./images/user-icon.svg" alt="user-icon.svg" class="img-fluid mt-1 me-2">sign in</a>
+                <div class="justify-content-end flex-grow-0" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0 flex-row">
+                        <li class="nav-item ms-2">
+                            <a class="nav-link d-flex align-items-center fw-normal" href="#"><img src="./images/user-icon.svg" alt="user-icon.svg" class="img-fluid me-2"><span class="d-none d-md-block">sign in</span></a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link d-flex align-items-center fw-normal" href="#"><img src="./images/whitelist-icon.svg" alt="whitelist.svg" class="img-fluid mt-1 me-2">wishlist</a>
+                        <li class="nav-item ms-2">
+                            <a class="nav-link d-flex align-items-center fw-normal" href="#"><img src="./images/whitelist-icon.svg" alt="whitelist.svg" class="img-fluid me-2"> <span class="d-none d-md-block">wishlist</span> </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link d-flex align-items-center fw-normal" href="#"><img src="./images/cart-icon.svg" alt="cart.svg" class="img-fluid mt-1 me-2">cart</a>
+                        <li class="nav-item ms-2">
+                            <a class="nav-link d-flex align-items-center fw-normal" href="#"><img src="./images/cart-icon.svg" alt="cart.svg" class="img-fluid me-2"> <span class="d-none d-md-block">cart</span></a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <nav class="menu py-3">
+        <!-- sideMenu part html start -->
+        <div class="sideMenu bg-white position-absolute border top-0">
+            <h3 class="fw-normal text-black">Filters</h3>
+            <ul>
+                <li class="border-bottom py-3"><a class="fw-medium d-flex align-items-center justify-content-between" href="#">Browse shop</a></li>
+                <li class="border-bottom py-3"><a class="fw-medium d-flex align-items-center justify-content-between" href="#">Custom Books <i class="fas fa-angle-right"></i></a></li>
+                <li class="border-bottom py-3"><a class="fw-medium d-flex align-items-center justify-content-between" href="#">Custom Products <i class="fas fa-angle-right"></i></a></li>
+                <li class="border-bottom py-3"><a class="fw-medium d-flex align-items-center justify-content-between" href="#">Plant-Based<i class="fas fa-angle-right"></i></a></li>
+                <li class="border-bottom py-3"><a class="fw-medium d-flex align-items-center justify-content-between" href="#">Home</a></li>
+                <li class="border-bottom py-3"><a class="fw-medium d-flex align-items-center justify-content-between" href="#">Crads</a></li>
+                <li class="border-bottom py-3"><a class="fw-medium d-flex align-items-center justify-content-between" href="#">Start Selling</a></li>
+                <li class="border-bottom py-3"><a class="fw-medium d-flex align-items-center justify-content-between" href="#">Join Us</a></li>
+                <li class="py-3"><a class="fw-medium d-flex align-items-center justify-content-between" href="#">Login</a></li>
+            </ul>
+        </div>
+        <!-- sideMenu part html end -->
+        <!-- navbar bottom menu start -->
+        <nav class="menu py-3 d-none d-md-block">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
                         <ul class="d-flex justify-content-center">
-                            <li class="nav-item px-4">
+                            <li class="nav-item px-2 px-lg-3">
                                 <a class="nav-link d-flex align-items-center fw-normal" href="#">Browse shop</a>
                             </li>
-                            <li class="nav-item px-4">
+                            <li class="nav-item px-2 px-lg-3">
                                 <a class="nav-link d-flex align-items-center fw-normal" href="#">Custom Books</a>
                             </li>
-                            <li class="nav-item px-4">
+                            <li class="nav-item px-2 px-lg-3">
                                 <a class="nav-link d-flex align-items-center fw-normal" href="#">Custom Products</a>
                             </li>
-                            <li class="nav-item px-4">
+                            <li class="nav-item px-2 px-lg-3">
                                 <a class="nav-link d-flex align-items-center fw-normal" href="#">Plant-Based</a>
                             </li>
-                            <li class="nav-item px-4">
+                            <li class="nav-item px-2 px-lg-3">
                                 <a class="nav-link d-flex align-items-center fw-normal" href="#">Cards</a>
                             </li>
-                            <li class="nav-item px-4">
+                            <li class="nav-item px-2 px-lg-4">
                                 <a class="nav-link d-flex align-items-center fw-normal" href="#">Start Selling</a>
                             </li>
-                            <li class="nav-item px-4">
+                            <li class="nav-item px-2 px-lg-3">
                                 <a class="nav-link d-flex align-items-center fw-normal" href="#">Join Us</a>
                             </li>
                         </ul>
@@ -72,6 +95,8 @@
                 </div>
             </div>
         </nav>
+        <!-- navbar bottom menu end -->
+
     </section>
     <!-- navigation part html end  -->
 
@@ -215,7 +240,14 @@
     </footer>
     <!-- footer part html end -->
 
+        
+    <!-- jQuery library  -->
+    <script src="./js/jquery-1.12.1.min.js"></script>
+    <!-- owl carousel  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- Bootstrap Bundle with Popper -->
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- custom js -->
     <script src="./js/custom.js"></script>
 </body>
 
