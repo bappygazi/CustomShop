@@ -24,7 +24,17 @@ a:hover {
     text-decoration: none;
 }
 
+.form-control:focus {
+    box-shadow: none;
+    border-color: #e2e5e9 !important;
+}
+
 /* fonts css  */
+@font-face {
+    font-family: Ridley-Grotesk-light;
+    src: url(../webfonts/Ridley-Grotesk-Light.otf);
+}
+
 @font-face {
     font-family: Ridley-Grotesk-Regular;
     src: url(../webfonts/Ridley-Grotesk-Regular.otf);
@@ -46,6 +56,10 @@ a:hover {
 }
 
 /* font family css  */
+.fw-light {
+    font-family: Ridley-Grotesk-light;
+}
+
 .fw-normal {
     font-family: Ridley-Grotesk-Regular;
 }
@@ -81,6 +95,10 @@ h2 {
     --bs-btn-hover-border-color: #3ab549;
     --bs-btn-active-bg: #3ab549;
     --bs-btn-active-border-color: #3ab549;
+}
+
+body {
+    font-family: Ridley-Grotesk-Regular;
 }
 
 /* navigation part css */
@@ -133,18 +151,6 @@ h2 {
     width: 30%;
 }
 
-/* product page css part  */
-
-
-
-
-
-
-
-
-
-
-
 /* range bar css part start */
 .range-bar {
     padding: 40px 30px;
@@ -159,6 +165,7 @@ h2 {
     border-radius: 200px;
     background: #C6FEE0;
     -webkit-appearance: none;
+    position: relative;
     opacity: 0.7;
     -webkit-transition: .2s;
     transition: opacity .2s;
@@ -184,10 +191,11 @@ h2 {
     box-shadow: 0px 2px 3px 0px #81818140;
 }
 
+
 .custom-range::-moz-range-progress {
     height: 5px;
     border-radius: 200px;
-    background-color:#08BF5D;
+    background-color: #08BF5D;
 }
 
 /* Mouse-over effects */
@@ -222,32 +230,84 @@ h2 {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-/* product menu scss  */
-.nav-pills .nav-link {
-    color: #002c15;
+/* product hero css  */
+#hero {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../images/bg-banner.jpg);
 }
 
-.nav-pills .nav-link.active,
-.nav-pills .show>.nav-link {
-    background-color: #002c15;
+#hero .hero-text p {
+    font-size: 30px;
 }
 
-.product-menu .tab-content .tab-pane .btn-group .btn {
-    height: 40px;
-    font-size: 0.813rem;
+
+/* product reviewer past csss */
+
+.reviewer .user-text h4 {
+    font-size: 25px;
 }
 
-/* product items css  */
+.reviewer .user-text h6 {
+    font-size: 15px;
+}
+
+.reviewer .user-text p {
+    color: #506170;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.reviewer .contact-box h6 {
+    font-size: 14px;
+}
+
+.reviewer .contact-box .icon img {
+    padding: 12px;
+}
+
+.review a {
+    color: #FFCC03;
+}
+
+.review-text h5 {
+    font-size: 22px;
+}
+
+.review-bar {
+    width: 100px;
+    height: 20px;
+    background-color: #F2F2F2;
+}
+
+.bar-fill {
+    background-color: #027867;
+}
+
+.review-text .review-count .review a {
+    font-size: 14px;
+}
+
+.review-text .review-count span {
+    font-size: 13px;
+}
+
+.review-text .form-control {
+    height: 55px;
+    font-size: 15px;
+}
+
+.review-text .form-control::placeholder {
+    color: #506170;
+}
+
+.review-text .date-time span {
+    color: #506170;
+    font-size: 15px;
+}
+
+/* product banner css  */
 
 #product-title {
     background-color: #08BF5D;
@@ -261,9 +321,181 @@ h2 {
     font-size: 0.875rem;
 }
 
-.review a {
-    color: #FFCC03;
+
+/* product menu scss  */
+.nav-pills .nav-link {
+    color: #08BF5E;
 }
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    background-color: #002c15;
+}
+
+.product-menu .nav .slider-icon a img {
+    width: 36px;
+    height: 35px;
+    padding: 12px;
+    border-radius: 50%;
+    border: 1px solid #D9D9D9;
+}
+
+.product-menu .tab-content .tab-pane .btn-group .btn {
+    height: 40px;
+    font-size: 0.813rem;
+}
+
+/* side menu area part css  */
+
+.search-box h5 {
+    font-size: 20px;
+}
+
+.search-box .form-control {
+    height: 40px;
+    font-size: 14px;
+}
+
+.search-box .btn {
+    height: 40px;
+    background-color: #08BF5D;
+}
+
+/* filter price  */
+
+.filter-product h6 {
+    font-size: 20px;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #090045;
+    box-shadow: none;
+    background-color: transparent;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: var(--bs-accordion-btn-icon);
+}
+
+.accordion-button::after {
+    opacity: 0.6;
+    margin-left: 25px;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.price-box {
+    color: #7E889B;
+}
+
+.price-box input {
+    width: 60px;
+    height: 40px;
+    border: 1px solid #B3BBC1;
+}
+
+.price-box .field input {
+    -moz-appearance: textfield;
+}
+
+.price-box input[type="number"]::-webkit-outer-spin-button,
+.price-box input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.price-slider {
+    height: 5px;
+    position: relative;
+    background: #ddd;
+    border-radius: 5px;
+}
+
+.price-slider .progress {
+    left: 0%;
+    right: 0%;
+    height: 100%;
+    position: absolute;
+    border-radius: 5px;
+    background: #04AA6D;
+}
+
+.range-input .left {
+    left: 0;
+    top: -38px;
+}
+
+.range-input .right {
+    right: 0;
+    top: -38px;
+}
+
+.range-input input {
+    top: -5px;
+    width: 100%;
+    height: 5px;
+    background: none;
+    pointer-events: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+.range-input input[type="range"]::-webkit-slider-thumb {
+    width: 19px;
+    height: 19px;
+    cursor: pointer;
+    border-radius: 50%;
+    background: #04AA6D;
+    pointer-events: auto;
+    -webkit-appearance: none;
+    border: 4px solid #ffffff;
+    box-shadow: 0px 2px 3px 0px #81818140;
+}
+
+.range-input input[type="range"]::-moz-range-thumb {
+    width: 19px;
+    height: 19px;
+    cursor: pointer;
+    border-radius: 50%;
+    background: #04AA6D;
+    pointer-events: auto;
+    -webkit-appearance: none;
+    border: 4px solid #ffffff;
+    box-shadow: 0px 2px 3px 0px #81818140;
+}
+
+
+
+
+
+
+/* categories part  */
+.categories h5 {
+    font-size: 20px;
+}
+
+.categories ul li a {
+    font-size: 15px;
+    color: #090045;
+}
+
+.categories ul li a:hover {
+    color: #08BF5D;
+}
+
+.categories ul li a.active {
+    color: #08BF5D;
+}
+
+
+
+/* shortlist part css */
+.shortlist-product h5 {
+    font-size: 20px;
+}
+
+/* product items css  */
 
 .product-items .price {
     font-size: 1rem;
@@ -411,6 +643,21 @@ h2 {
     font-size: 1.125rem;
 }
 
+.chat-box h5 {
+    height: 54px;
+    font-size: 18px;
+    background-color: #DADADA;
+}
+
+.chat-box .form-control {
+    height: 52px;
+}
+
+.chat-box .btn {
+    height: 52px;
+    background-color: #08BF5D !important;
+}
+
 .offer-timer .offer-text h4 {
     color: #D81818;
     font-size: 1.5rem;
@@ -452,6 +699,23 @@ h2 {
     background-color: transparent;
 }
 
+/* pagination part css  */
+
+.pagination .page-item .page-link {
+    width: 50px;
+    height: 50px;
+    color: #090045;
+}
+
+.pagination .page-item .page-link:focus {
+    box-shadow: none;
+}
+
+.pagination .page-item .page-link.active {
+    color: #ffffff;
+    background-color: #08BF5D;
+}
+
 
 /* signIn part css  */
 .signin-content {
@@ -476,10 +740,6 @@ h2 {
 .signin-content .form-control::placeholder {
     color: #506170;
     font-size: 0.938rem;
-}
-
-.form-control:focus {
-    border-color: #00A2E2;
 }
 
 .form-check .form-check-label {
@@ -680,6 +940,79 @@ h2 {
 .order-text .order-close {
     font-size: 30px;
 }
+
+
+/* stay connect part css */
+
+.connect-text h3 {
+    font-size: 32px;
+}
+
+
+.connect-text p {
+    font-size: 15px;
+}
+
+
+.connect-text .form-control {
+    height: 52px;
+}
+
+.connect-text .btn {
+    height: 52px;
+    font-size: 14px;
+}
+
+.connect-bg .btn-close {
+    top: 25px;
+    right: 25px;
+}
+
+.connect-bg .btn-close:focus {
+    box-shadow: none;
+}
+
+/* listing table part css  */
+#listing-table .listing-header {
+    font-size: 30px;
+}
+
+#listing-table .table {
+    font-size: 14px;
+}
+
+#listing-table .listing-table {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
+}
+
+#listing-table .table td {
+    align-items: center;
+    height: 55px;
+}
+
+#listing-table .table .active td {
+    font-size: 16px;
+}
+
+#listing-table .table .active td:first-child {
+    color: rgba(8, 191, 93, 1);
+}
+
+#listing-table .table .btn {
+    height: 30px;
+    font-size: 14px;
+}
+
+#listing-table .table .padding-btn {
+    color: rgba(130, 29, 189, 1);
+    background-color: rgba(130, 29, 189, 0.1);
+}
+
+#listing-table .table .rejected-btn {
+    color: rgba(255, 48, 48, 1);
+    background-color: rgba(234, 78, 78, 0.14);
+}
+
 
 
 /* responsive desing  */
