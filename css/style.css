@@ -170,6 +170,7 @@ body {
     -webkit-transition: .2s;
     transition: opacity .2s;
 }
+
 .custom-range::-webkit-slider-thumb {
     width: 16px;
     height: 16px;
@@ -1017,6 +1018,122 @@ body {
     color: rgba(255, 48, 48, 1);
     background-color: rgba(234, 78, 78, 0.14);
 }
+
+/* blog page part  */
+
+.posted-blog,
+.latest-blog,
+.post-comment,
+.reply-comment,
+.latest-blog {
+
+    border-radius: 8px;
+    background-color: #F6F6F6;
+}
+
+.posted-blog .post h3 {
+    font-size: 30px;
+}
+
+.posted-blog .post h5 {
+    font-size: 20px;
+}
+
+.posted-blog .post span {
+    color: #506170;
+    font-size: 12px;
+}
+
+.posted-blog .post p {
+    color: #506170;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.posted-blog .post ul {
+    color: #506170;
+    font-size: 15px;
+}
+
+.reply-comment p {
+    font-size: 14px;
+}
+
+.reply-comment .form-control {
+    border-radius: 6px;
+    border: 1px solid #CCC;
+    background: #FFF;
+}
+
+
+.reply-comment .in-box-height {
+    height: 48px;
+}
+
+.reply-comment .btn,
+.shop-now .btn {
+    height: 48px;
+    border-radius: 4px;
+    background: #08BF5D !important;
+}
+
+.latest-blog ul li {
+    border-radius: 6px;
+    border: 1px solid #CCC;
+    background: #FFF;
+}
+
+.latest-blog ul li a {
+    color: #506170;
+}
+
+
+.social_media a {
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    display: inline-block;
+    background-color: #08BF5D;
+}
+
+.blog-footer h5 {
+    opacity: 0.8;
+    color: #ffffff;
+}
+
+.blog-footer h5::after {
+    left: 0;
+    bottom: -8px;
+    width: 52px;
+    height: 1px;
+    content: '';
+    position: absolute;
+    background-color: #B6C9DB;
+}
+
+.blog-footer ul {}
+
+.blog-footer ul li {
+    border-bottom: 1px solid #B6C9DB;
+}
+
+.blog-footer ul li a {
+    font-size: 14px;
+    color: #B6C9DB;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

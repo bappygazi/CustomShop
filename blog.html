@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog</title>
+    <!-- favicon  -->
+    <link rel="icon" href="./images/favicon.io">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- fontawesome icon -->
+    <link rel="stylesheet" href="./css/fontawesome-all.min.css">
+    <!-- owl carousel css  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <!-- owl theme css  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <!-- main style  -->
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body class="fw-normal">
+
+    <!-- navigation part html start  -->
+    <section id="navigation" class="border-bottom overflow-hidden">
+        <nav class="navbar navbar-expand-lg pt-3">
+            <div class="container">
+                <button class="btn sidebar sidebar-icon border-0 me-3 p-0"><img src="./images/sidebar-icon.svg" alt="sidebar-icon.svg" class="img-fluid"></button>
+                <button class="btn sidebar sidebar-close d-none border-0 me-3 p-0"><img src="./images/sidebar-close.svg" alt="sidebar-close.svg" class="img-fluid"></button>
+                <a class="navbar-brand" href="./home.html"><img src="./images/logo.svg" alt="logo.svg" class="img-fluid"></a>
+                <form class="d-flex position-relative m-auto" role="search">
+                    <input class="form-control shadow-sm me-2 fw-normal rounded-pill ps-4 pe-5" type="search" placeholder="search for anything" aria-label="Search">
+                    <button class="btn border-0 position-absolute end-0 top-50 translate-middle-y d-flex p-0 me-4" type="submit"><img src="./images/search-icon.svg" alt="search-icon.svg" class="img-fluid"></button>
+                </form>
+                <div class="justify-content-end flex-grow-0" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0 flex-row">
+                        <li class="nav-item ms-2">
+                            <a class="nav-link d-flex align-items-center fw-normal" href="./signIn.html"><img src="./images/user-icon.svg" alt="user-icon.svg" class="img-fluid me-2"><span class="d-none d-md-block">sign in</span></a>
+                        </li>
+                        <li class="nav-item ms-2">
+                            <a class="nav-link d-flex align-items-center fw-normal" href="./listing.html"><img src="./images/whitelist-icon.svg" alt="whitelist.svg" class="img-fluid me-2"> <span class="d-none d-md-block">wishlist</span> </a>
+                        </li>
+                        <li class="nav-item ms-2">
+                            <a class="nav-link d-flex align-items-center fw-normal" href="./checkout.html"><img src="./images/cart-icon.svg" alt="cart.svg" class="img-fluid me-2"> <span class="d-none d-md-block">cart</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- sideMenu part html start -->
+        <div class="sideMenu bg-white position-absolute border top-0">
+            <h3 class="fw-normal text-black">Filters</h3>
+            <ul>
+                <li class="border-bottom py-3"><a class="fw-medium d-flex align-items-center justify-content-between" href="./product.html">Browse shop</a></li>
+                <li class="border-bottom py-3"><a class="fw-medium d-flex align-items-center justify-content-between" href="#">Custom Books <i class="fas fa-angle-right"></i></a></li>
+                <li class="border-bottom py-3"><a class="fw-medium d-flex align-items-center justify-content-between" href="#">Custom Products <i class="fas fa-angle-right"></i></a></li>
+                <li class="border-bottom py-3"><a class="fw-medium d-flex align-items-center justify-content-between" href="#">Plant-Based<i class="fas fa-angle-right"></i></a></li>
+                <li class="border-bottom py-3"><a class="fw-medium d-flex align-items-center justify-content-between" href="./home.html">Home</a></li>
+                <li class="border-bottom py-3"><a class="fw-medium d-flex align-items-center justify-content-between" href="#">Crads</a></li>
+                <li class="border-bottom py-3"><a class="fw-medium d-flex align-items-center justify-content-between" href="#">Start Selling</a></li>
+                <li class="border-bottom py-3"><a class="fw-medium d-flex align-items-center justify-content-between" href="./SignUp.html">Join Us</a></li>
+                <li class="py-3"><a class="fw-medium d-flex align-items-center justify-content-between" href="signIn.html">Login</a></li>
+            </ul>
+        </div>
+        <!-- sideMenu part html end -->
+        <!-- navbar bottom menu start -->
+        <nav class="menu py-3 d-none d-md-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <ul class="d-flex justify-content-center">
+                            <li class="nav-item px-2 px-lg-3">
+                                <a class="nav-link d-flex align-items-center fw-normal" href="./product.html">Browse shop</a>
+                            </li>
+                            <li class="nav-item px-2 px-lg-3">
+                                <a class="nav-link d-flex align-items-center fw-normal" href="#">Custom Books</a>
+                            </li>
+                            <li class="nav-item px-2 px-lg-3">
+                                <a class="nav-link d-flex align-items-center fw-normal" href="#">Custom Products</a>
+                            </li>
+                            <li class="nav-item px-2 px-lg-3">
+                                <a class="nav-link d-flex align-items-center fw-normal" href="#">Plant-Based</a>
+                            </li>
+                            <li class="nav-item px-2 px-lg-3">
+                                <a class="nav-link d-flex align-items-center fw-normal" href="#">Cards</a>
+                            </li>
+                            <li class="nav-item px-2 px-lg-4">
+                                <a class="nav-link d-flex align-items-center fw-normal" href="#">Start Selling</a>
+                            </li>
+                            <li class="nav-item px-2 px-lg-3">
+                                <a class="nav-link d-flex align-items-center fw-normal" href="./SignUp.html">Join Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- navbar bottom menu end -->
+
+    </section>
+    <!-- navigation part html end  -->
+
+    <!-- blog post part html start  -->
+    <section id="blog_post" class="pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="posted-blog p-lg-4 p-3 mb-5">
+                        <div class="post">
+                            <div class="main-topic mb-lg-4">
+                                <div class="mb-2">
+                                    <img class="img-fluid w-100" src="images/blog-posted.png" alt="blog-img">
+                                </div>
+                                <h3 class="fw-semibold pt-4">5 Tips for Great Craft Fair Displays</h3>
+                                <span class="post-date">Posted on June 6, 2023</span>
+                                <p class="fw-normal pt-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus</p>
+                            </div>
+                            <div class="first-topic pt-3 mb-lg-4">
+                                <div class="mb-2">
+                                    <img class="img-fluid w-100" src="images/blog-posted1.png" alt="blog-img">
+                                </div>
+                                <h5 class="fw-semibold pt-4">1. Start with a cohesive theme or color scheme: </h5>
+                                <p class="fw-normal pt-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus</p>
+                                <p class="fw-normal pt-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+                            </div>
+                            <div class="second-topic pt-3 mb-lg-4">
+                                <div class="mb-2">
+                                    <img class="img-fluid w-100" src="images/blog-posted2.png" alt="blog-img">
+                                </div>
+                                <h5 class="fw-semibold pt-4">2. Use height and depth to your advantage:</h5>
+                                <p class="fw-normal pt-3 mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                                <ul class="pb-2">
+                                    <li class="d-flex align-items-center py-1"><img src="images/blog-point.svg" alt="blog-point" class="img-fluid me-2">Wooden or Plastic Crates</li>
+                                    <li class="d-flex align-items-center py-1"><img src="images/blog-point.svg" alt="blog-point" class="img-fluid me-2">Acrylic Risers</li>
+                                    <li class="d-flex align-items-center py-1"><img src="images/blog-point.svg" alt="blog-point" class="img-fluid me-2">Stepped Shelves</li>
+                                    <li class="d-flex align-items-center py-1"><img src="images/blog-point.svg" alt="blog-point" class="img-fluid me-2">Pegboard*</li>
+                                    <li class="d-flex align-items-center py-1"><img src="images/blog-point.svg" alt="blog-point" class="img-fluid me-2">Grid Panels</li>
+                                    <li class="d-flex align-items-center py-1"><img src="images/blog-point.svg" alt="blog-point" class="img-fluid me-2">Tiered Baskets</li>
+                                    <li class="d-flex align-items-center py-1"><img src="images/blog-point.svg" alt="blog-point" class="img-fluid me-2">Dessert or Display Stands</li>
+                                    <li class="d-flex align-items-center py-1"><img src="images/blog-point.svg" alt="blog-point" class="img-fluid me-2">Stacked Boxes or Baskets</li>
+                                </ul>
+                                <p class="fw-normal pt-3 mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make</p>
+                                <p class="fw-normal mb-4">It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more versions of Lorem Ipsum.</p>
+
+                            </div>
+                            <div class="third-topic pt-3 mb-4">
+                                <div class="mb-2">
+                                    <img class="img-fluid w-100" src="images/blog-posted3.png" alt="blog-img">
+                                </div>
+                                <h5 class="fw-semibold pt-4">3. Make your products the focal point:</h5>
+                                <p class="fw-normal pt-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                                <p class="fw-normal mb-4">It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+                            </div>
+                            <div class="fourth-topic pt-3 mb-lg-4">
+                                <div class="mb-2">
+                                    <img class="img-fluid w-100" src="images/blog-posted4.png" alt="blog-img">
+                                </div>
+                                <h5 class="fw-semibold pt-4">4. Provide clear pricing and product information:</h5>
+                                <p class="fw-normal pt-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                                <p class="fw-normal mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+
+                            </div>
+                            <div class="fifth -topic pt-3">
+                                <div class="mb-2">
+                                    <img class="img-fluid w-100" src="images/blog-posted5.png" alt="blog-img">
+                                </div>
+                                <h5 class="fw-semibold pt-4">5. Add some personal touches:</h5>
+                                <p class="fw-normal pt-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                                <p class="fw-normal mb-0">It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-comment p-3 p-lg-4 mb-5">
+                        <div class="user d-flex align-items-center mb-2">
+                            <div class="profile-img flex-shrink-0">
+                                <img src="./images/client's-img.png" alt="client's-img.png" class="img-fluid">
+                            </div>
+                            <h5 class="name ms-3 fw-semibold fs-5"> Elizabeth Martinez </h5>
+                        </div>
+                        <p class="fw-normal text-black-50">Jacki is a multi-talented creative professional with a background in visual merchandising. A maker with years of experience selling online and at artisan markets, she excels in creating captivating displays that enhance the shopping experience. Jacki’s unique blend of visual merchandising expertise and passion for handmadesets her apart in the industry.</p>
+                    </div>
+                    <div class="reply-comment p-3 p-lg-4 mb-5">
+                        <h5 class="fw-semibold fs-5 mb-3"> Leave a Reply </h5>
+                        <p class="fw-light text-black-50">Your email address will not be published. Required fields are marked *</p>
+                        <form action="">
+                            <div class="comment *-box mb-3">
+                                <label class="fw-light fw-normal mb-1" for="comment">Comment *</label>
+                                <textarea name="comment" id="comment" name="comment" class="w-100 form-control px-3" rows="6"></textarea>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col">
+                                    <label class="fw-light fw-normal mb-1" for="name">Name *</label>
+                                    <input type="text" name="name" id="name" class="form-control in-box-height px-3">
+                                </div>
+                                <div class="col">
+                                    <label class="fw-light fw-normal mb-1" for="email">Email *</label>
+                                    <input type="text" class="form-control in-box-height px-3" name="email" id="email">
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <div class="g-recaptcha" data-sitekey="6Ldbdg0TAAAAAI7KAf72Q6uagbWzWecTeBWmrCpJ"></div>
+                            </div>
+                            <button class=" btn fw-light text-white">Post Comment</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4 ps-lg-5">
+                    <div class="latest-blog p-3 p-lg-4 mb-5">
+                        <h5 class="fs-5 fw-semibold mb-3">LATEST POSTS</h5>
+                        <ul>
+                            <li class="mb-3 p-3"><a href="#">Featured Maker: Lizzy of Lizush</a></li>
+                            <li class="mb-3 p-3"><a href="#">5 Tips for Great Craft Fair Displays</a></li>
+                            <li class="mb-3 p-3"><a href="#">Featured Maker: Guv’nor of Sun Fun Art</a></li>
+                            <li class="mb-3 p-3"><a href="#">8 Simple and Achievable Steps to Selling Your Handcrafted Products Online</a></li>
+                            <li class="p-3"><a href="#">Featured Maker: Tomoka of Tomokaart</a></li>
+                        </ul>
+                    </div>
+                    <div class="shop-now position-relative mb-4">
+                        <img src="./images/shop-now.png" alt="shop-now.png" class="img-fluid">
+                        <div class="position-absolute bottom-0 start-0 mx-4 mb-4">
+                            <h5 class="fw-semibold fs-5">Handmade has a new home</h5>
+                            <p class="fw-normal">And It’s donating 100% profits to help children's in need</p>
+                            <button class="btn fw-light text-white">Shop Now</button>
+                        </div>
+                    </div>
+                    <div class="social_media text-center mb-4">
+                        <a class="text-center text-white rounded-circle mx-1" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="text-center text-white rounded-circle mx-1" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="text-center text-white rounded-circle mx-1" href="#"><i class="fab fa-youtube"></i></a>
+                        <a class="text-center text-white rounded-circle mx-1" href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- blog post part html end  -->
+
+    <!-- subscribe part html start -->
+    <section id="subscribe" class="py-5 overflow-hidden">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 m-auto">
+                    <div class="subscribe-content text-center">
+                        <p class="text-white fw-normal mb-4">Yes! Send me exclusive offers, unique gift ideas, and personalised
+                            tips for shopping and selling.</p>
+                        <form class="position-relative m-auto" role="search">
+                            <input class="form-control me-2 rounded-pill fw-normal shadow-none border-0" type="search" placeholder="Enter your email" aria-label="Search">
+                            <button class="btn text-white fw-normal rounded-start-0 rounded-pill border-0 shadow-none bg-black position-absolute translate-middle-y" type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- subscribe part html end -->
+
+    <!-- footer part html start -->
+    <footer id="footer" class="py-5 overflow-hidden">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="blog-footer">
+                        <h5 class="fw-medium position-relative mb-4">CATEGORIES</h5>
+                        <ul>
+                            <li class="py-2"><a class="fw-light" href="#">From the Founder</a></li>
+                            <li class="py-2"><a class="fw-light" href="#">Gift Guides</a></li>
+                            <li class="py-2"><a class="fw-light" href="#">Handmade BusinessCards</a></li>
+                            <li class="py-2 border-0"><a class="fw-light" href="#">Meet the Makers</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="blog-footer pt-4 pt-lg-0">
+                        <h5 class="fw-medium position-relative mb-4">RECENT POSTS</h5>
+                        <ul>
+                            <li class="py-2"><a class="fw-light" href="#">Featured Maker: Lizzy of Lizush</a></li>
+                            <li class="py-2"><a class="fw-light" href="#">5 Tips for Great Craft Fair Displays</a></li>
+                            <li class="py-2"><a class="fw-light" href="#">Featured Maker: Guv'nor of Sun Fun Art</a></li>
+                            <li class="py-2"><a class="fw-light" href="#">8 Simple and Achievable Steps to Selling Your Handcrafted Products Online</a></li>
+                            <li class="py-2 border-0"><a class="fw-light" href="#">Featured Maker: Tomoka of Tomokaart</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer-bottom mt-4 text-center pt-4">
+                        <small class="fw-normal">© 2022 Customeshop.com. <a class="ms-3" href="#">Terms of Use </a> <a class="ms-3" href="#">Privacy</a></small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer part html end -->
+
+    <!-- jQuery library  -->
+    <script src="./js/jquery-1.12.1.min.js"></script>
+    <!-- google rerecaptcha  -->
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <!-- owl carousel  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- custom js -->
+    <script src="./js/custom.js"></script>
+</body>
+
+</html>
