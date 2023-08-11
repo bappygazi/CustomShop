@@ -1,0 +1,496 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Product info details</title>
+    <!-- favicon  -->
+    <link rel="icon" href="./images/favicon.io" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- fontawesome icon -->
+    <link rel="stylesheet" href="./css/fontawesome-all.min.css" />
+    <!-- owl carousel css  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <!-- owl theme css  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <!-- main style  -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body class="fw-normal">
+    <!-- navigation part html start  -->
+    <section id="navigation" class="overflow-hidden">
+      <nav class="navbar navbar-expand-lg pt-3">
+        <div class="container">
+          <button class="btn sidebar sidebar-icon border-0 me-3 p-0"><img src="./images/sidebar-icon.svg" alt="sidebar-icon.svg" class="img-fluid" /></button>
+          <button class="btn sidebar sidebar-close d-none border-0 me-3 p-0"><img src="./images/sidebar-close.svg" alt="sidebar-close.svg" class="img-fluid" /></button>
+          <a class="navbar-brand" href="./home.html"><img src="./images/logo.svg" alt="logo.svg" class="img-fluid" /></a>
+          <form class="d-flex position-relative m-auto" role="search">
+            <input class="form-control shadow-sm me-2 fw-normal rounded-pill ps-4 pe-5" type="search" placeholder="search for anything" aria-label="Search" />
+            <button class="btn border-0 position-absolute end-0 top-50 translate-middle-y d-flex p-0 me-4" type="submit"><img src="./images/search-icon.svg" alt="search-icon.svg" class="img-fluid" /></button>
+          </form>
+          <div class="justify-content-end flex-grow-0" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 flex-row">
+              <li class="nav-item ms-2">
+                <a class="nav-link d-flex align-items-center fw-normal" href="./signIn.html"><img src="./images/user-icon.svg" alt="user-icon.svg" class="img-fluid me-2" /><span class="d-none d-md-block">sign in</span></a>
+              </li>
+              <li class="nav-item ms-2">
+                <a class="nav-link d-flex align-items-center fw-normal" href="./listing.html"><img src="./images/whitelist-icon.svg" alt="whitelist.svg" class="img-fluid me-2" /> <span class="d-none d-md-block">wishlist</span> </a>
+              </li>
+              <li class="nav-item ms-2">
+                <a class="nav-link d-flex align-items-center fw-normal" href="./checkout.html"><img src="./images/cart-icon.svg" alt="cart.svg" class="img-fluid me-2" /> <span class="d-none d-md-block">cart</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- sideMenu part html start -->
+      <div class="sideMenu bg-white position-absolute border top-0">
+        <h3 class="fw-normal text-black">Filters</h3>
+        <ul>
+          <li class="border-bottom py-3"><a class="fw-medium d-flex align-items-center justify-content-between" href="./product.html">Browse shop</a></li>
+          <li class="border-bottom py-3">
+            <a class="fw-medium d-flex align-items-center justify-content-between" href="#">Custom Books <i class="fas fa-angle-right"></i></a>
+          </li>
+          <li class="border-bottom py-3">
+            <a class="fw-medium d-flex align-items-center justify-content-between" href="#">Custom Products <i class="fas fa-angle-right"></i></a>
+          </li>
+          <li class="border-bottom py-3">
+            <a class="fw-medium d-flex align-items-center justify-content-between" href="#">Plant-Based<i class="fas fa-angle-right"></i></a>
+          </li>
+          <li class="border-bottom py-3"><a class="fw-medium d-flex align-items-center justify-content-between" href="./home.html">Home</a></li>
+          <li class="border-bottom py-3"><a class="fw-medium d-flex align-items-center justify-content-between" href="#">Crads</a></li>
+          <li class="border-bottom py-3"><a class="fw-medium d-flex align-items-center justify-content-between" href="#">Start Selling</a></li>
+          <li class="border-bottom py-3"><a class="fw-medium d-flex align-items-center justify-content-between" href="./SignUp.html">Join Us</a></li>
+          <li class="py-3"><a class="fw-medium d-flex align-items-center justify-content-between" href="signIn.html">Login</a></li>
+        </ul>
+      </div>
+      <!-- sideMenu part html end -->
+    </section>
+    <!-- navigation part html end  -->
+
+    <!-- info details part html start  -->
+    <section id="info-details" class="border-bottom">
+      <div class="border-bottom py-3">
+        <div class="container">
+          <div class="row">
+            <ul class="nav info-details-tab nav-pills justify-content-start justify-content-md-center" id="pills-tab" role="tablist">
+              <li class="nav-item px-4 my-2 my-lg-0" role="presentation">
+                <button class="nav-link bg-transparent p-0 active" id="pills-general-tab" data-bs-toggle="pill" data-bs-target="#pills-general" type="button" role="tab" aria-controls="pills-general" aria-selected="true">General</button>
+              </li>
+              <li class="nav-item px-4 my-2 my-lg-0" role="presentation">
+                <button class="nav-link bg-transparent p-0" id="pills-add-ons-tab" data-bs-toggle="pill" data-bs-target="#pills-add-ons" type="button" role="tab" aria-controls="pills-add-ons" aria-selected="false">Add-ons</button>
+              </li>
+              <li class="nav-item px-4 my-2 my-lg-0" role="presentation">
+                <button class="nav-link bg-transparent p-0" id="pills-description-tab" data-bs-toggle="pill" data-bs-target="#pills-description" type="button" role="tab" aria-controls="pills-description" aria-selected="false">Description</button>
+              </li>
+              <li class="nav-item px-4 my-2 my-lg-0" role="presentation">
+                <button class="nav-link bg-transparent p-0" id="pills-logos-tab" data-bs-toggle="pill" data-bs-target="#pills-logos" type="button" role="tab" aria-controls="pills-logos" aria-selected="false">Logos</button>
+              </li>
+              <li class="nav-item px-4 my-2 my-lg-0" role="presentation">
+                <button class="nav-link bg-transparent p-0" id="pills-termsConditions-tab" data-bs-toggle="pill" data-bs-target="#pills-termsConditions" type="button" role="tab" aria-controls="pills-termsConditions" aria-selected="false">Terms & Conditions</button>
+              </li>
+              <li class="nav-item px-4 my-2 my-lg-0" role="presentation">
+                <button class="nav-link bg-transparent p-0" id="pills-plans-tab" data-bs-toggle="pill" data-bs-target="#pills-plans" type="button" role="tab" aria-controls="pills-plans" aria-selected="false">Plans</button>
+              </li>
+              <li class="nav-item px-4 my-2 my-lg-0" role="presentation">
+                <button class="nav-link bg-transparent p-0" id="pills-reviews-tab" data-bs-toggle="pill" data-bs-target="#pills-reviews" type="button" role="tab" aria-controls="pills-reviews" aria-selected="false">Reviews</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="tab-concent">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="tab-content py-5" id="pills-tabContent">
+                <!-- general part html start  -->
+                <div class="tab-pane fade show active" id="pills-general" role="tabpanel" aria-labelledby="pills-general-tab" tabindex="0">
+                  <div class="row">
+                    <div class="col-lg-8 col-md-7 order-md-0 order-1">
+                      <div class="general-content">
+                        <h6 class="fw-medium text-black">General Store Information</h6>
+                        <div class="store-info border rounded-2">
+                          <div class="mb-4">
+                            <label class="fw-bold mb-2" for="#company">Company<span class="text-danger">*</span></label>
+                            <input type="name" class="form-control rounded-pill px-3" id="company" placeholder="Mint Sugar" />
+                          </div>
+                          <div class="mb-4">
+                            <div class="row">
+                              <div class="col">
+                                <label class="fw-bold mb-3">Status</label>
+                                <div class="status-active d-flex align-items-center">
+                                  <span>
+                                    <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <circle cx="10.6406" cy="10" r="9.5" fill="white" stroke="#08BF5D" />
+                                      <circle cx="10.6406" cy="10" r="6" fill="#08BF5D" />
+                                    </svg>
+                                  </span>
+                                  <span class="fw-normal text-muted ms-2">Active</span>
+                                </div>
+                              </div>
+                              <div class="col">
+                                <label class="fw-bold mb-2" for="#language">Language</label>
+                                <div class="dropdown">
+                                  <button class="btn border dropdown-toggle rounded-pill px-3 w-100 text-start" type="button" data-bs-toggle="dropdown" aria-expanded="false">English</button>
+                                  <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="mb-4">
+                            <label class="fw-bold mb-2" for="#email">E-mail<span class="text-danger">*</span></label>
+                            <input type="email" class="form-control rounded-pill px-3" id="email" placeholder="jlincoln81@gmail.com" />
+                          </div>
+                          <div class="mb-4">
+                            <label class="fw-bold mb-2" for="#address">Address<span class="text-danger">*</span></label>
+                            <input type="address" class="form-control rounded-pill px-3" id="address" placeholder="Boston street" />
+                          </div>
+                          <div class="mb-4">
+                            <div class="row">
+                              <div class="col">
+                                <label class="fw-bold mb-2" for="#city">City</label>
+                                <input type="address" class="form-control rounded-pill px-3" id="city" placeholder="256 5th Avenue" />
+                              </div>
+                              <div class="col">
+                                <label class="fw-bold mb-2" for="#country">Country</label>
+                                <div class="dropdown">
+                                  <button class="btn border dropdown-toggle rounded-pill px-3 w-100 text-start" type="button" data-bs-toggle="dropdown" aria-expanded="false">United States</button>
+                                  <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="mb-0">
+                            <div class="row">
+                              <div class="col">
+                                <label class="fw-bold mb-2" for="#state">State/Province</label>
+                                <div class="dropdown">
+                                  <button class="btn border dropdown-toggle rounded-pill px-3 w-100 text-start" type="button" data-bs-toggle="dropdown" aria-expanded="false">Massachusetts</button>
+                                  <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="col">
+                                <label class="fw-bold mb-2" for="#zip">Zip/Postal Code</label>
+                                <input type="text" class="form-control rounded-pill px-3" id="zip" placeholder="256 5th Avenue" />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="stripe-content">
+                        <h6 class="fw-medium text-black">Stripe Connect</h6>
+                        <div class="border rounded-2 stripe-connect text-center">
+                          <div class="stripe-connect-items d-flex justify-content-center align-items-center mb-4">
+                            <div class="bank-img">
+                              <img src="./images/bank.svg" alt="bank.svg" class="img-fluid" />
+                            </div>
+                            <div class="connect mx-3">
+                              <img src="./images/connect-icon.svg" alt="connect-icon.svg" class="img-fluid" />
+                            </div>
+                            <div class="stripe-img">
+                              <img src="./images/stripe.svg" alt="stripe.svg" class="img-fluid" />
+                            </div>
+                          </div>
+                          <button class="stripe-connect-btn rounded-pill border-0 fw-semibold text-white">Connect With Stripe</button>
+                        </div>
+                      </div>
+                      <div class="sotreBanner-content">
+                        <h6 class="fw-medium text-black">Store Banner</h6>
+                        <div class="border rounded-2 sotreBanner-items">
+                          <h6 class="fw-medium text-black">Vendor Store Banner</h6>
+                          <p class="text-muted fw-normal">
+                            Thumbnails will be generated from detailed images automatically, but you can also <br />
+                            <a href="#">Upload them manually</a>
+                          </p>
+                          <div class="file-upload rounded-2 py-5 text-center">
+                            <a href="#">
+                              <img src="./images/upload-icon.svg" alt="upload-icon.svg" class="img-fluid" />
+                              <p class="fw-medium text-black pt-4">Select a file or enter a URL</p>
+                              <button class="upload-btn text-muted rounded-pill px-3 py-1 border bg-transparent">Local</button>
+                              <button class="upload-btn text-muted rounded-pill px-3 py-1 border bg-transparent">Server</button>
+                              <button class="upload-btn text-muted rounded-pill px-3 py-1 border bg-transparent">URL</button>
+                            </a>
+                          </div>
+                          <div class="upload-checkbox pt-3">
+                            <div class="form-check d-flex align-items-start">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
+                              <label class="form-check-label ms-2 text-muted" for="flexCheckChecked"> I’m uploading a HiDPI image. </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="back-save-btn text-end pt-4 mt-3">
+                        <button class="btn btn-outline-success rounded-pill fw-semibold me-4">Back</button>
+                        <button class="btn save-btn rounded-pill text-white fw-semibold">Save</button>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-5 order-md-1 order-0">
+                      <div class="menu-content border rounded-2 p-4">
+                        <h6 class="fw-medium">Menu</h6>
+                        <ul class="pt-2">
+                          <li class="py-3 border-bottom"><a class="text-muted" href="#">View Seller Products</a></li>
+                          <li class="py-3 border-bottom"><a class="text-muted" href="#">View Vendor Users</a></li>
+                          <li class="py-3"><a class="text-muted" href="#">View Vendor Orders</a></li>
+                        </ul>
+                      </div>
+                      <div class="menu-content border rounded-2 p-4 mb-5">
+                        <h6 class="fw-medium">Vendor’s statistics</h6>
+                        <ul class="pt-2">
+                          <li class="py-3 border-bottom d-flex align-items-center justify-content-between">
+                            <span class="fw-normal">Balance</span>
+                            <label class="fw-medium">$0.00</label>
+                          </li>
+                          <li class="py-3 border-bottom d-flex align-items-center justify-content-between">
+                            <span class="fw-normal">Orders</span>
+                            <label class="fw-medium">0</label>
+                          </li>
+                          <li class="py-3 border-bottom d-flex align-items-center justify-content-between">
+                            <span class="fw-normal">Sales</span>
+                            <label class="fw-medium">$0.00</label>
+                          </li>
+                          <li class="py-3 border-bottom d-flex align-items-center justify-content-between">
+                            <span class="fw-normal">Income</span>
+                            <label class="fw-medium">$0.00</label>
+                          </li>
+                          <li class="py-3 d-flex align-items-center justify-content-between">
+                            <span class="fw-normal">Active Products</span>
+                            <label class="fw-medium">0</label>
+                          </li>
+                          <li class="py-3 d-flex align-items-center justify-content-between">
+                            <span class="fw-normal">out of Stock</span>
+                            <label class="fw-medium">0</label>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- general part html start  -->
+
+                <!-- add-ons part html start  -->
+                <div class="tab-pane fade" id="pills-add-ons" role="tabpanel" aria-labelledby="pills-add-ons-tab" tabindex="0">...</div>
+                <!-- add-ons part html end  -->
+
+                <!-- description part html start  -->
+                <div class="tab-pane fade" id="pills-description" role="tabpanel" aria-labelledby="pills-description-tab" tabindex="0">...</div>
+                <!-- description part html end  -->
+
+                <!-- logos part html start  -->
+                <div class="tab-pane fade" id="pills-logos" role="tabpanel" aria-labelledby="pills-logos-tab" tabindex="0">...</div>
+                <!-- logos part html end  -->
+
+                <!-- termsConditions part html start  -->
+                <div class="tab-pane fade" id="pills-termsConditions" role="tabpanel" aria-labelledby="pills-termsConditions-tab" tabindex="0">...</div>
+                <!-- termsConditions part html end  -->
+
+                <!-- plans part html start  -->
+                <div class="tab-pane fade" id="pills-plans" role="tabpanel" aria-labelledby="pills-plans-tab" tabindex="0">
+                  <div class="plan-price">
+                    <h6 class="fw-medium text-black mb-5">Choose Your Plan</h6>
+                    <div class="row">
+                      <div class="col-lg-3 col-md-6 col-sm-6 mb-5">
+                        <div class="price-items h-100">
+                          <div class="item border text-center rounded-2 h-100">
+                            <div class="p-4">
+                              <h6 class="fw-medium text-black">Starter Plan</h6>
+                              <p class="text-muted pt-1">$1/Month Starting</p>
+                              <p class="text-muted">1/1/2021</p>
+                            </div>
+                            <div class="bg-black price position-relative py-3">
+                              <p class="text-white fw-bold mb-0">Free/<span class="fw-normal">Month</span></p>
+                            </div>
+                            <div class="p-4">
+                              <p class="mb-0 text-muted pt-4"><strong class="text-black">25</strong> Products <strong class="text-black">Unlimited</strong> revenue Vendor microspore Transaction free <strong class="text-black">5%</strong></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6 col-sm-6 mb-5">
+                        <div class="price-items h-100">
+                          <div class="item border text-center rounded-2 h-100">
+                            <div class="p-4">
+                              <h6 class="fw-medium text-black">Starter Plan</h6>
+                              <p class="text-muted pt-1">$1/Month Starting</p>
+                              <p class="text-muted">1/1/2021</p>
+                            </div>
+                            <div class="bg-black price position-relative py-3">
+                              <p class="text-white fw-bold mb-0">Free/<span class="fw-normal">Month</span></p>
+                            </div>
+                            <div class="p-4">
+                              <p class="mb-0 text-muted pt-4"><strong class="text-black">100</strong> Products <strong class="text-black">Unlimited</strong> revenue Vendor microspore Transaction free <strong class="text-black">4.5%</strong></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6 col-sm-6 mb-5">
+                        <div class="price-items h-100 active">
+                          <div class="active-plan text-center position-absolute w-100 rounded-top">
+                            <h6 class="fw-normal text-white text-uppercase mb-0 py-2">Current Plan</h6>
+                          </div>
+                          <div class="item border text-center rounded-2 h-100">
+                            <div class="p-4">
+                              <h6 class="fw-medium text-black">Professional Plan</h6>
+                              <p class="text-muted mb-0 pt-1">
+                                $2/Month Starting <br />
+                                5/1/2020 <br />
+                                -$5/Month Starting <br />
+                                1/1/2021
+                              </p>
+                            </div>
+                            <div class="bg-black price position-relative py-3">
+                              <p class="text-white fw-bold mb-0">Free/<span class="fw-normal">Month</span></p>
+                            </div>
+                            <div class="p-4">
+                              <p class="mb-0 text-muted pt-4"><strong class="text-black">250</strong> Products <strong class="text-black">Unlimited</strong> revenue Vendor microspore Transaction free <strong class="text-black">4%</strong></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6 col-sm-6 mb-5">
+                        <div class="price-items h-100">
+                          <div class="item border text-center rounded-2 h-100">
+                            <div class="p-4">
+                              <h6 class="fw-medium text-black">All-star Plan</h6>
+                              <p class="text-muted mb-0 pt-1">
+                                $7/Month Starting <br />
+                                5/1/2020 <br />
+                                -$10/Month Starting <br />
+                                1/1/2021
+                              </p>
+                            </div>
+                            <div class="bg-black price position-relative py-3">
+                              <p class="text-white fw-bold mb-0">Free/<span class="fw-normal">Month</span></p>
+                            </div>
+                            <div class="p-4">
+                              <p class="mb-0 text-muted pt-4"><strong class="text-black">1000</strong> Products <strong class="text-black">Unlimited</strong> revenue Vendor microspore Transaction free <strong class="text-black">3.5%</strong></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- plans part html end  -->
+
+                <!-- reviews part html start  -->
+                <div class="tab-pane fade" id="pills-reviews" role="tabpanel" aria-labelledby="pills-reviews-tab" tabindex="0">...</div>
+                <!-- reviews part html end  -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- info details part html end  -->
+
+    <!-- subscribe part html start -->
+    <section id="subscribe" class="py-5 overflow-hidden">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 m-auto">
+            <div class="subscribe-content text-center">
+              <p class="text-white fw-normal mb-4">Yes! Send me exclusive offers, unique gift ideas, and personalised tips for shopping and selling.</p>
+              <form class="position-relative m-auto" role="search">
+                <input class="form-control me-2 rounded-pill fw-normal shadow-none border-0" type="search" placeholder="Enter your email" aria-label="Search" />
+                <button class="btn text-white fw-normal rounded-start-0 rounded-pill border-0 shadow-none bg-black position-absolute translate-middle-y" type="submit">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- subscribe part html end -->
+
+    <!-- footer part html start -->
+    <footer id="footer" class="py-5 overflow-hidden">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="logo text-center text-xl-start mb-4 mb-xl-0">
+              <img src="./images/logo-white.png" alt="logo-white.png" class="img-fluid" />
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="footer-items pt-3">
+              <h6 class="text-white fw-normal mb-4">Shop</h6>
+              <ul>
+                <li class="mb-3"><a class="fw-normal" href="#">Custom Books</a></li>
+                <li class="mb-3"><a class="fw-normal" href="#">Custom Products</a></li>
+                <li class="mb-3"><a class="fw-normal" href="#">Plant-Based</a></li>
+                <li class="mb-3"><a class="fw-normal" href="#">Cards</a></li>
+                <li class="mb-3"><a class="fw-normal" href="#">Start Selling</a></li>
+                <li class="mb-3"><a class="fw-normal" href="#">Join Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="footer-items pt-3">
+              <h6 class="text-white fw-normal mb-4">Freelance</h6>
+              <ul>
+                <li class="mb-3"><a class="fw-normal" href="#">Write</a></li>
+                <li class="mb-3"><a class="fw-normal" href="#">Edit</a></li>
+                <li class="mb-3"><a class="fw-normal" href="#">Design</a></li>
+                <li class="mb-3"><a class="fw-normal" href="#">Illustrate</a></li>
+                <li class="mb-3"><a class="fw-normal" href="#">About</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="footer-items pt-3">
+              <h6 class="text-white fw-normal mb-4">Help</h6>
+              <ul>
+                <li class="mb-3"><a class="fw-normal" href="#">Online Help</a></li>
+                <li class="mb-3"><a class="fw-normal" href="#">Faq</a></li>
+                <li class="mb-3"><a class="fw-normal" href="#">Forums</a></li>
+                <li class="mb-3"><a class="fw-normal" href="#">Affiliates</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg">
+            <div class="footer-items pt-3 social-icon text-center text-lg-start">
+              <h6 class="text-white fw-normal mb-4">Get Social</h6>
+              <a class="text-white rounded-circle text-center border d-inline-block me-2" href="#"><i class="fab fa-facebook-f"></i></a>
+              <a class="text-white rounded-circle text-center border d-inline-block me-2" href="#"><i class="fab fa-twitter"></i></a>
+              <a class="text-white rounded-circle text-center border d-inline-block me-2" href="#"><i class="fab fa-youtube"></i></a>
+              <a class="text-white rounded-circle text-center border d-inline-block" href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="footer-bottom mt-4 text-center pt-4">
+              <small class="fw-normal">© 2022 Customeshop.com. <a class="ms-3" href="#">Terms of Use </a> <a class="ms-3" href="#">Privacy</a></small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer part html end -->
+
+    <!-- jQuery library  -->
+    <script src="./js/jquery-1.12.1.min.js"></script>
+    <!-- owl carousel  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- custom js -->
+    <script src="./js/custom.js"></script>
+  </body>
+</html>
