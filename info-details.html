@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <!-- fontawesome icon -->
     <link rel="stylesheet" href="./css/fontawesome-all.min.css" />
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
     <!-- owl carousel css  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
     <!-- owl theme css  -->
@@ -289,7 +291,148 @@
                 <!-- add-ons part html end  -->
 
                 <!-- description part html start  -->
-                <div class="tab-pane fade" id="pills-description" role="tabpanel" aria-labelledby="pills-description-tab" tabindex="0">...</div>
+                <div class="tab-pane fade" id="pills-description" role="tabpanel" aria-labelledby="pills-description-tab" tabindex="0">
+                  <div class="row">
+                    <div class="col-lg-8">
+                      <div class="description-box">
+                        <h6 class="fw-medium">Description</h6>
+                        <div class="mb-3 box-editor position-relative">
+                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="28"></textarea>
+                          <div class="text-control w-100 d-flex px-2 border-bottom position-absolute top-0">
+                            <div class="back-forward me-2 mt-2">
+                              <a class="m-1" href="#"><img src="./images/textBoxIcon/back-icon.svg" alt="back-icon.svg" /></a>
+                              <a class="m-1" href="#"><img src="./images/textBoxIcon/forward-icon.svg" alt="back-icon.svg" /></a>
+                            </div>
+                            <div class="font-choose-box ps-2 me-2 border-start pb-1 pt-2">
+                              <div class="dropdown">
+                                <button class="btn p-0 border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">Paragraph <i class="bi bi-chevron-down ms-1"></i></button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="text-formating border-start d-flex align-items-center me-2">
+                              <a class="mx-1" href="#"><img src="./images/textBoxIcon/font-bold-icon.svg" class="img-fluid" alt="font-bold-icon.svg" /></a>
+                              <a class="mx-1" href="#"><img src="./images/textBoxIcon/font-italic-icon.svg" class="img-fluid" alt="font-italic-icon.svg" /></a>
+
+                              <div class="dropdown">
+                                <a class="mx-1 d-flex" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><img src="./images/textBoxIcon/font-border-icon.svg" class="img-fluid" alt="font-border-icon.svg" /><i class="bi bi-chevron-down ms-1 align-items-center text-dark mt-2"></i></a>
+
+                                <ul class="dropdown-menu p-0 mw-100" style="min-width: 0">
+                                  <li>
+                                    <a class="dropdown-item p-2" href="#"><img src="./images/textBoxIcon/font-border-icon.svg" class="img-fluid" alt="font-border-icon.svg" /></a>
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item p-2" href="#"><img src="./images/textBoxIcon/font-border-icon.svg" class="img-fluid" alt="font-border-icon.svg" /></a>
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item p-2" href="#"><img src="./images/textBoxIcon/font-border-icon.svg" class="img-fluid" alt="font-border-icon.svg" /></a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="text-listing d-flex align-items-center border-start me-2 px-1">
+                              <div class="dropdown mx-1">
+                                <a class="mx-1 d-flex" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><img src="./images/textBoxIcon/font-border-list.svg" class="img-fluid" alt="font-border-list.svg" /><i class="bi bi-chevron-down ms-1 align-items-center pt-1 text-dark"></i></a>
+
+                                <ul class="dropdown-menu p-0 mw-100" style="min-width: 0">
+                                  <li>
+                                    <a class="dropdown-item p-2" href="#"><img src="./images/textBoxIcon/font-border-list.svg" class="img-fluid" alt="font-border-list.svg" /></a>
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item p-2" href="#"><img src="./images/textBoxIcon/font-border-list.svg" class="img-fluid" alt="font-border-list.svg" /></a>
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item p-2" href="#"><img src="./images/textBoxIcon/font-border-list.svg" class="img-fluid" alt="font-border-list.svg" /></a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="dropdown mx-1">
+                                <a class="mx-1 d-flex" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><img src="./images/textBoxIcon/font-dot-list.svg" class="img-fluid" alt="font-dot-list.svg" /><i class="bi bi-chevron-down ms-1 align-items-center mt-1 text-dark"></i></a>
+
+                                <ul class="dropdown-menu p-0 mw-100" style="min-width: 0">
+                                  <li>
+                                    <a class="dropdown-item p-2" href="#"><img src="./images/textBoxIcon/font-dot-list.svg" class="img-fluid" alt="font-dot-list.svg" /></a>
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item p-2" href="#"><img src="./images/textBoxIcon/font-dot-list.svg" class="img-fluid" alt="font-dot-list.svg" /></a>
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item p-2" href="#"><img src="./images/textBoxIcon/font-dot-list.svg" class="img-fluid" alt="font-dot-list.svg" /></a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="dropdown mx-2">
+                                <a class="mx-1 d-flex" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><img src="./images/textBoxIcon/font-num-list.svg" class="img-fluid" alt="font-num-list.svg" /><i class="bi bi-chevron-down ms-1 align-items-center text-dark mt-1"></i></a>
+
+                                <ul class="dropdown-menu p-0 mw-100" style="min-width: 0">
+                                  <li>
+                                    <a class="dropdown-item p-2" href="#"><img src="./images/textBoxIcon/font-num-list.svg" class="img-fluid" alt="font-num-list.svg" /></a>
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item p-2" href="#"><img src="./images/textBoxIcon/font-num-list.svg" class="img-fluid" alt="font-num-list.svg" /></a>
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item p-2" href="#"><img src="./images/textBoxIcon/font-num-list.svg" class="img-fluid" alt="font-num-list.svg" /></a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <a class="mx-1" href="#"><img src="./images/textBoxIcon/font-text-align-right.svg" class="img-fluid" alt="font-bold-icon.svg" /></a>
+                              <a class="ms-2" href="#"><img src="./images/textBoxIcon/font-text-align-right.svg" class="img-fluid" alt="font-italic-icon.svg" /></a>
+                            </div>
+                            <div class="text-table d-flex align-items-center border-start px-2">
+                              <a class="mx-1" href="#"><img src="./images/textBoxIcon/font-table-icon.svg" class="img-fluid" alt="font-table-icon.svg" /></a>
+                            </div>
+                            <div class="text-info d-flex align-items-center border-start px-2">
+                              <a class="mx-1" href="#"><img src="./images/textBoxIcon/format-info-icon.svg" class="img-fluid" alt="format-info-icon.svg" /></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="menu-content border rounded-2 p-4">
+                        <h6 class="fw-medium">Menu</h6>
+                        <ul class="pt-2">
+                          <li class="py-3 border-bottom"><a class="text-muted" href="#">View Seller Products</a></li>
+                          <li class="py-3 border-bottom"><a class="text-muted" href="#">View Vendor Users</a></li>
+                          <li class="py-3"><a class="text-muted" href="#">View Vendor Orders</a></li>
+                        </ul>
+                      </div>
+                      <div class="menu-content border rounded-2 p-4 mb-5">
+                        <h6 class="fw-medium">Vendor’s statistics</h6>
+                        <ul class="pt-2">
+                          <li class="py-3 border-bottom d-flex align-items-center justify-content-between">
+                            <span class="fw-normal">Balance</span>
+                            <label class="fw-medium">$0.00</label>
+                          </li>
+                          <li class="py-3 border-bottom d-flex align-items-center justify-content-between">
+                            <span class="fw-normal">Orders</span>
+                            <label class="fw-medium">0</label>
+                          </li>
+                          <li class="py-3 border-bottom d-flex align-items-center justify-content-between">
+                            <span class="fw-normal">Sales</span>
+                            <label class="fw-medium">$0.00</label>
+                          </li>
+                          <li class="py-3 border-bottom d-flex align-items-center justify-content-between">
+                            <span class="fw-normal">Income</span>
+                            <label class="fw-medium">$0.00</label>
+                          </li>
+                          <li class="py-3 d-flex align-items-center justify-content-between">
+                            <span class="fw-normal">Active Products</span>
+                            <label class="fw-medium">0</label>
+                          </li>
+                          <li class="py-3 d-flex align-items-center justify-content-between">
+                            <span class="fw-normal">out of Stock</span>
+                            <label class="fw-medium">0</label>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <!-- description part html end  -->
 
                 <!-- logos part html start  -->
@@ -308,34 +451,39 @@
                       <div class="col-lg-3 col-md-6 col-sm-6 mb-5">
                         <div class="price-items h-100">
                           <div class="item border text-center rounded-2 h-100">
-                            <div class="p-4">
-                              <h6 class="fw-medium text-black">Starter Plan</h6>
-                              <p class="text-muted pt-1">$1/Month Starting</p>
-                              <p class="text-muted">1/1/2021</p>
-                            </div>
-                            <div class="bg-black price position-relative py-3">
-                              <p class="text-white fw-bold mb-0">Free/<span class="fw-normal">Month</span></p>
-                            </div>
-                            <div class="p-4">
-                              <p class="mb-0 text-muted pt-4"><strong class="text-black">25</strong> Products <strong class="text-black">Unlimited</strong> revenue Vendor microspore Transaction free <strong class="text-black">5%</strong></p>
-                            </div>
+                            <a href="#">
+                              <div class="p-4 price-item-feature">
+                                <h6 class="fw-medium text-black">Starter Plan</h6>
+                                <p class="text-muted pt-1">$1/Month Starting <br />1/1/2021</p>
+                              </div>
+                              <div class="bg-black price position-relative py-3">
+                                <p class="text-white fw-bold mb-0">Free/<span class="fw-normal">Month</span></p>
+                              </div>
+                              <div class="p-4">
+                                <p class="mb-0 text-muted pt-4"><strong class="text-black">25</strong> Products <strong class="text-black">Unlimited</strong> revenue Vendor microspore Transaction free <strong class="text-black">5%</strong></p>
+                              </div>
+                            </a>
                           </div>
                         </div>
                       </div>
                       <div class="col-lg-3 col-md-6 col-sm-6 mb-5">
                         <div class="price-items h-100">
                           <div class="item border text-center rounded-2 h-100">
-                            <div class="p-4">
-                              <h6 class="fw-medium text-black">Starter Plan</h6>
-                              <p class="text-muted pt-1">$1/Month Starting</p>
-                              <p class="text-muted">1/1/2021</p>
-                            </div>
-                            <div class="bg-black price position-relative py-3">
-                              <p class="text-white fw-bold mb-0">Free/<span class="fw-normal">Month</span></p>
-                            </div>
-                            <div class="p-4">
-                              <p class="mb-0 text-muted pt-4"><strong class="text-black">100</strong> Products <strong class="text-black">Unlimited</strong> revenue Vendor microspore Transaction free <strong class="text-black">4.5%</strong></p>
-                            </div>
+                            <a href="#">
+                              <div class="p-4 price-item-feature">
+                                <h6 class="fw-medium text-black">Growth Plan</h6>
+                                <p class="text-muted pt-1">
+                                  $3/Month Starting <br />
+                                  1/1/2021
+                                </p>
+                              </div>
+                              <div class="bg-black price position-relative py-3">
+                                <p class="text-white fw-bold mb-0">Free/<span class="fw-normal">Month</span></p>
+                              </div>
+                              <div class="p-4">
+                                <p class="mb-0 text-muted pt-4"><strong class="text-black">100</strong> Products <strong class="text-black">Unlimited</strong> revenue Vendor microspore Transaction free <strong class="text-black">4.5%</strong></p>
+                              </div>
+                            </a>
                           </div>
                         </div>
                       </div>
@@ -345,42 +493,46 @@
                             <h6 class="fw-normal text-white text-uppercase mb-0 py-2">Current Plan</h6>
                           </div>
                           <div class="item border text-center rounded-2 h-100">
-                            <div class="p-4">
-                              <h6 class="fw-medium text-black">Professional Plan</h6>
-                              <p class="text-muted mb-0 pt-1">
-                                $2/Month Starting <br />
-                                5/1/2020 <br />
-                                -$5/Month Starting <br />
-                                1/1/2021
-                              </p>
-                            </div>
-                            <div class="bg-black price position-relative py-3">
-                              <p class="text-white fw-bold mb-0">Free/<span class="fw-normal">Month</span></p>
-                            </div>
-                            <div class="p-4">
-                              <p class="mb-0 text-muted pt-4"><strong class="text-black">250</strong> Products <strong class="text-black">Unlimited</strong> revenue Vendor microspore Transaction free <strong class="text-black">4%</strong></p>
-                            </div>
+                            <a href="#">
+                              <div class="p-4 price-item-feature">
+                                <h6 class="fw-medium text-black">Professional Plan</h6>
+                                <p class="text-muted mb-0 pt-1">
+                                  $2/Month Starting <br />
+                                  5/1/2020 <br />
+                                  -$5/Month Starting <br />
+                                  1/1/2021
+                                </p>
+                              </div>
+                              <div class="bg-black price position-relative py-3">
+                                <p class="text-white fw-bold mb-0">Free/<span class="fw-normal">Month</span></p>
+                              </div>
+                              <div class="p-4">
+                                <p class="mb-0 text-muted pt-4"><strong class="text-black">250</strong> Products <strong class="text-black">Unlimited</strong> revenue Vendor microspore Transaction free <strong class="text-black">4%</strong></p>
+                              </div>
+                            </a>
                           </div>
                         </div>
                       </div>
                       <div class="col-lg-3 col-md-6 col-sm-6 mb-5">
                         <div class="price-items h-100">
                           <div class="item border text-center rounded-2 h-100">
-                            <div class="p-4">
-                              <h6 class="fw-medium text-black">All-star Plan</h6>
-                              <p class="text-muted mb-0 pt-1">
-                                $7/Month Starting <br />
-                                5/1/2020 <br />
-                                -$10/Month Starting <br />
-                                1/1/2021
-                              </p>
-                            </div>
-                            <div class="bg-black price position-relative py-3">
-                              <p class="text-white fw-bold mb-0">Free/<span class="fw-normal">Month</span></p>
-                            </div>
-                            <div class="p-4">
-                              <p class="mb-0 text-muted pt-4"><strong class="text-black">1000</strong> Products <strong class="text-black">Unlimited</strong> revenue Vendor microspore Transaction free <strong class="text-black">3.5%</strong></p>
-                            </div>
+                            <a href="#">
+                              <div class="p-4 price-item-feature">
+                                <h6 class="fw-medium text-black">All-star Plan</h6>
+                                <p class="text-muted mb-0 pt-1">
+                                  $7/Month Starting <br />
+                                  5/1/2020 <br />
+                                  -$10/Month Starting <br />
+                                  1/1/2021
+                                </p>
+                              </div>
+                              <div class="bg-black price position-relative py-3">
+                                <p class="text-white fw-bold mb-0">Free/<span class="fw-normal">Month</span></p>
+                              </div>
+                              <div class="p-4">
+                                <p class="mb-0 text-muted pt-4"><strong class="text-black">1000</strong> Products <strong class="text-black">Unlimited</strong> revenue Vendor microspore Transaction free <strong class="text-black">3.5%</strong></p>
+                              </div>
+                            </a>
                           </div>
                         </div>
                       </div>

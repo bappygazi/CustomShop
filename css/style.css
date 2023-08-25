@@ -101,6 +101,10 @@ h2 {
   --bs-btn-active-bg: #3ab549;
   --bs-btn-active-border-color: #3ab549;
 }
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: #08bf5d;
+}
 
 body {
   font-family: Ridley-Grotesk-Regular;
@@ -1214,10 +1218,6 @@ body {
   width: 100%;
   border-radius: 15px;
 }
-.general-content .dropdown-item.active,
-.general-content .dropdown-item:active {
-  background-color: #08bf5d;
-}
 .stripe-content,
 .sotreBanner-content {
   margin-top: 45px;
@@ -1277,7 +1277,23 @@ body {
   background-color: #08bf5d;
 }
 
+/*========= description part css ============ */
+
+.description-box {
+}
+.description-box .box-editor {
+}
+.description-box .text-control {
+  height: 40px;
+  font-size: 14px;
+}
+
+.description-box .text-control .dropdown i {
+  font-size: 0.8125rem;
+}
+
 /*========= plans part css ============ */
+
 .plan-price p {
   font-size: 0.875rem;
 }
@@ -1293,12 +1309,18 @@ body {
   -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
   clip-path: polygon(50% 100%, 0 0, 100% 0);
 }
+
+.plan-price .price-items .price-item-feature {
+  height: 165px;
+}
 .plan-price .price-items .price p {
   font-size: 1.5625rem;
 }
 .plan-price .price-items .price p span {
   font-size: 0.875rem;
 }
+
+/* plans price active css  */
 
 .plan-price .price-items.active {
   position: relative;
@@ -1317,8 +1339,17 @@ body {
   background-color: #08bf5d;
 }
 
+/* plans price hover css  */
+.plan-price .price-items:hover .item {
+  border-color: #08bf5d !important;
+}
+.plan-price .price-items:hover .price {
+  background-color: #08bf5d !important;
+}
+.plan-price .price-items:hover .price::after {
+  background-color: #08bf5d;
+}
 /* ========= Collabration part css ========== */
-
 .user-profile {
 }
 .user-profile {
